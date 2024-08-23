@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset your.name:1 labels:example-label context:example-context
+--changeset Kevin:1 
 --comment: example comment
 create table person (
     id int primary key auto_increment not null,
@@ -11,7 +11,7 @@ create table person (
 )
 --rollback DROP TABLE person;
 
---changeset your.name:2 labels:example-label context:example-context
+--changeset Kevin:2 
 --comment: example comment
 create table company (
     id int primary key auto_increment not null,
@@ -22,8 +22,4 @@ create table company (
 )
 --rollback DROP TABLE company;
 
---changeset other.dev:3 labels:example-label context:example-context
---comment: example comment
-alter table person add column country varchar(2)
---rollback ALTER TABLE person DROP COLUMN country;
 
